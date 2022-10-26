@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "calibre_reg";
+    src: url("./assets/fonts/CalibreRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "sfmono_reg";
+    src: url("./assets/fonts/SFMonoRegular.otf") format("opentype");
+}
+
+body {
+    background-color: theme('colors.dBackgroundLight');
+    height: 100vh;
+    color: theme('colors.dDark')
+}
+
