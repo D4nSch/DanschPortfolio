@@ -27,8 +27,8 @@ module.exports = {
         'dLight': '#E8E8E8'
       },
       fontFamily: {
-        'sans':  ['calibre_reg', ...defaultTheme.fontFamily.sans],
-        'mono': ['sfmono_reg', ...defaultTheme.fontFamily.mono]
+        'sans':  ['Calibre', ...defaultTheme.fontFamily.sans],
+        'mono': ['SFMono', ...defaultTheme.fontFamily.mono]
       },
     },
   },

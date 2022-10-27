@@ -3,13 +3,39 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "calibre_reg";
-    src: url("./assets/fonts/CalibreRegular.otf") format("opentype");
+    font-family: "Calibre";
+    src: url("./assets/fonts/Calibre-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Calibre-Regular.woff") format("woff"),
+    url("./assets/fonts/Calibre-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "sfmono_reg";
-    src: url("./assets/fonts/SFMonoRegular.otf") format("opentype");
+    font-family: "Calibre";
+    src: url("./assets/fonts/Calibre-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Calibre-Medium.woff") format("woff"),
+    url("./assets/fonts/Calibre-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url("./assets/fonts/Calibre-Semibold.woff2") format("woff2"),
+    url("./assets/fonts/Calibre-Semibold.woff") format("woff"),
+    url("./assets/fonts/Calibre-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SFMono";
+    src: url("./assets/fonts/SFMono-Regular.woff2") format("woff2"),
+    url("./assets/fonts/SFMono-Regular.woff") format("woff"),
+    url("./assets/fonts/SFMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
