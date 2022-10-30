@@ -1,13 +1,14 @@
-ul {
-  list-style: none;
-  counter-reset: my-awesome-counter;
-}
-
 ul li {
-  counter-increment: my-awesome-counter;
+  counter-increment: navCounter;
 }
 
 ul li a::before {
-  font-family: "sfmono_reg";
-  content: "0" counter(my-awesome-counter) ".";
+  color: theme('colors.dAccentPurple');
+  content: "0" counter(navCounter) ".";
+}
+
+.resume-button {
+  padding: 0.75rem 1rem;
+  border: 1px solid;
+  border-radius: 4px;
 }
