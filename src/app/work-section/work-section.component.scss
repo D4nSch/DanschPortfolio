@@ -1,0 +1,6 @@
+.highlighter {
+    border-left: solid 3px theme('colors.dGrey');
+    &:hover {
+        border-left: solid 3px theme('colors.dAccentPurple');
+    }
+}
