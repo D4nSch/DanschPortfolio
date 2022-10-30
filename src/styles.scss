@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+// $global-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355);
+
 @font-face {
     font-family: "Calibre";
     src: url("./assets/fonts/Calibre-Regular.woff2") format("woff2"),
@@ -41,6 +43,19 @@
 body {
     background-color: theme('colors.dBackgroundLight');
     height: 100vh;
-    color: theme('colors.dDark')
+    color: theme('colors.dDark');
+    counter-reset: counter;
+}
+  
+.numbered-heading {
+    font-size: clamp(26px, 5vw, 32px);
+    line-height: 1;
+    counter-increment: counter;
 }
 
+.numbered-heading::before {
+    color: theme('colors.dAccentPurple');
+    content: "0" counter(counter) ".";
+    font-size: 20px;
+    font-family: theme('fontFamily.mono');
+}
