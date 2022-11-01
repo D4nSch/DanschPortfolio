@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-work-section',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkSectionComponent implements OnInit {
 
+  faCaretRight = faCaretRight;
   workToShow = "self";
 
   constructor() { }
