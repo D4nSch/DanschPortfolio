@@ -8,6 +8,7 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
+import { BuildSectionComponent } from './build-section/build-section.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { WorkSectionComponent } from './work-section/work-section.component';
     NavbarComponent,
     HeroSectionComponent,
     AboutSectionComponent,
-    WorkSectionComponent
+    WorkSectionComponent,
+    BuildSectionComponent
   ],
   imports: [
     BrowserModule,
