@@ -4,3 +4,9 @@
         border-left: solid 3px theme('colors.dAccentPurple');
     }
 }
+
+.active {
+  color: theme('colors.dAccentPurple');
+  border-left: solid 3px theme('colors.dAccentPurple');
+  background-color: theme('colors.dBackgroundDark');
+}

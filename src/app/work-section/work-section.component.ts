@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkSectionComponent implements OnInit {
 
+  workToShow = "self";
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  setWorkToShow(work: string): void {
+    this.workToShow = work;
+  }
 }
