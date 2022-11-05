@@ -1,0 +1,17 @@
+.build-image-left {
+    filter: grayscale(50%) drop-shadow(.5rem .5rem 0 theme('colors.dAccentPurple'));
+
+    &:hover {
+        filter: grayscale(0) drop-shadow(.5rem .5rem 0 theme('colors.dAccentPurple'));  
+        transform: scale(1.02);
+    }
+}
+
+.build-image-right {
+    filter: grayscale(50%) drop-shadow(-.5rem .5rem 0 theme('colors.dAccentPurple'));
+
+    &:hover {
+        filter: grayscale(0) drop-shadow(-.5rem .5rem 0 theme('colors.dAccentPurple'));
+        transform: scale(1.02);
+    }
+}
