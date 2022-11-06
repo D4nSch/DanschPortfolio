@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutSectionComponent } from './about-section/about-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
 import { BuildSectionComponent } from './build-section/build-section.component';
+import { TouchSectionComponent } from './touch-section/touch-section.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BuildSectionComponent } from './build-section/build-section.component';
     HeroSectionComponent,
     AboutSectionComponent,
     WorkSectionComponent,
-    BuildSectionComponent
+    BuildSectionComponent,
+    TouchSectionComponent
   ],
   imports: [
     BrowserModule,
