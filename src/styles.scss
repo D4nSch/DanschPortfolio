@@ -63,3 +63,9 @@ body {
     font-size: 20px;
     font-family: theme('fontFamily.mono');
 }
+
+.styled-button {
+    padding: 0.75rem 1rem;
+    border: 1px solid;
+    border-radius: 4px;
+}
