@@ -11,6 +11,7 @@ import { WorkSectionComponent } from './work-section/work-section.component';
 import { BuildSectionComponent } from './build-section/build-section.component';
 import { TouchSectionComponent } from './touch-section/touch-section.component';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
+import { ScrollHideDirective } from './navbar/scroll-hide.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
     WorkSectionComponent,
     BuildSectionComponent,
     TouchSectionComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    ScrollHideDirective
   ],
   imports: [
     BrowserModule,
