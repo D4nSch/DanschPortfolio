@@ -10,6 +10,7 @@ import { AboutSectionComponent } from './about-section/about-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
 import { BuildSectionComponent } from './build-section/build-section.component';
 import { TouchSectionComponent } from './touch-section/touch-section.component';
+import { ProjectModalComponent } from './project-modal/project-modal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TouchSectionComponent } from './touch-section/touch-section.component';
     AboutSectionComponent,
     WorkSectionComponent,
     BuildSectionComponent,
-    TouchSectionComponent
+    TouchSectionComponent,
+    ProjectModalComponent
   ],
   imports: [
     BrowserModule,
