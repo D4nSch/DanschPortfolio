@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-build-section',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuildSectionComponent implements OnInit {
 
-  constructor() { }
+  selectedProject: string | undefined = undefined;
+
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
   }
 
+  setProject(project: string) {
+    this.renderer.addClass(document.body, "stop-scroll");
+    this.selectedProject = project;
+  }
+
+  onModalClose() {
+    this.renderer.removeClass(document.body, "stop-scroll");
+    this.selectedProject = undefined;
+  }
 }
