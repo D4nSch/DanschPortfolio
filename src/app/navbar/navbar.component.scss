@@ -6,3 +6,11 @@ ul li a::before {
   color: theme('colors.dAccentPurple');
   content: "0" counter(navCounter) ".";
 }
+
+.nav-show {
+  opacity: 100%;
+}
+
+.nav-hide {
+  opacity: 0%;
+}
