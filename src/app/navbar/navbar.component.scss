@@ -7,7 +7,9 @@ ul li a::before {
   content: "0" counter(navCounter) ".";
 }
 
-.nav-show {
+.nav-show-scroll {
+  height: 4.5rem;
+  box-shadow: 0 8px 12px -10px theme('colors.dDark');
   opacity: 100%;
 }
 

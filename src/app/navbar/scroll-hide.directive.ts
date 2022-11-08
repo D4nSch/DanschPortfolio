@@ -10,12 +10,15 @@ export class ScrollHideDirective {
   @HostListener('window:scroll', ['$event']) onScroll() {
 
     let currentScroll = window.pageYOffset;
-
-    if(currentScroll > this.lastScroll && currentScroll >= 200) {
+    
+    if(currentScroll === 0) {
+      this.renderer.removeClass(this.hostElement.nativeElement, 'nav-show-scroll');
+      this.renderer.removeClass(this.hostElement.nativeElement, 'nav-hide');
+    } else if(currentScroll > this.lastScroll) {
       this.renderer.addClass(this.hostElement.nativeElement, 'nav-hide');
-      this.renderer.removeClass(this.hostElement.nativeElement, 'nav-show');
+      this.renderer.removeClass(this.hostElement.nativeElement, 'nav-show-scroll');
     } else {
-      this.renderer.addClass(this.hostElement.nativeElement, 'nav-show');
+      this.renderer.addClass(this.hostElement.nativeElement, 'nav-show-scroll');
       this.renderer.removeClass(this.hostElement.nativeElement, 'nav-hide');
     }
 
