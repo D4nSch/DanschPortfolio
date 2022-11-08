@@ -59,7 +59,14 @@ body {
 
 .numbered-heading::before {
     color: theme('colors.dAccentPurple');
-    content: "0" counter(counter) ".";
+    content: "< 0" counter(counter) ".";
+    font-size: 20px;
+    font-family: theme('fontFamily.mono');
+}
+
+.numbered-heading::after {
+    color: theme('colors.dAccentPurple');
+    content: ">";
     font-size: 20px;
     font-family: theme('fontFamily.mono');
 }

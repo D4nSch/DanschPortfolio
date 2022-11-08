@@ -2,9 +2,15 @@ ul li {
   counter-increment: navCounter;
 }
 
+
 ul li a::before {
   color: theme('colors.dAccentPurple');
-  content: "0" counter(navCounter) ".";
+  content: "< 0" counter(navCounter) ".";
+}
+
+ul li a::after {
+  color: theme('colors.dAccentPurple');
+  content: ">";
 }
 
 .nav-show-scroll {
