@@ -18,18 +18,17 @@
         </div>
     </div>
     <div class="lg:hidden">
-        <aside [ngClass]="status ? 'open-sidenav' : ''" style="width: min(75vw, 400px); transform: translateX(75vw);" class="absolute top-0 right-0 bottom-0 h-[100vh] bg-dBackgroundDark flex">
-            <ul>
-                <li>
-                    xxx
-                </li>
-                <li>
-                    yyy
-                </li>
-                <li>
-                    zzz
-                </li>
-            </ul>
+        <div [ngClass]="status ? 'show-background-blur' : 'hide-background-blur'" class="absolute top-0 right-0 backdrop-blur-md bg-transparent w-[100vw] h-[100vh]">
+        </div>
+        <aside [ngClass]="status ? 'open-sidenav' : ''" style="width: min(75vw, 400px); transform: translateX(75vw);" class="absolute top-0 right-0 bottom-0 h-[100vh] bg-dBackgroundDark flex flex-row justify-center">
+            <div class="flex flex-col justify-center">
+                <ul class="menu menu-vertical p-0 text-sm font-mono">
+                    <li><a class="!px-1 text-xl">About</a></li>
+                    <li><a class="!px-1 text-xl">Experience</a></li>
+                    <li><a class="!px-1 text-xl">Work</a></li>
+                    <li><a class="!px-1 text-xl">Contact</a></li>
+                </ul>
+            </div>
         </aside>
         <div class="navbar xs:flex flex-row justify-between w-screen px-12">
             <div class="text-2xl p-0 font-mono tracking-[0.2em] cursor-pointer">
