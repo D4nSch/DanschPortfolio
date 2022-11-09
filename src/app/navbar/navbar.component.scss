@@ -2,15 +2,16 @@ ul li {
   counter-increment: navCounter;
 }
 
-
 ul li a::before {
   color: theme('colors.dAccentPurple');
   content: "< 0" counter(navCounter) ".";
+  line-height: 0;
 }
 
 ul li a::after {
   color: theme('colors.dAccentPurple');
   content: ">";
+  line-height: 0;
 }
 
 .nav-show-scroll {
@@ -21,4 +22,8 @@ ul li a::after {
 
 .nav-hide {
   opacity: 0%;
+}
+
+.open-sidenav {
+  transform: translateX(0vw) !important;
 }

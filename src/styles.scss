@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+
 * {
     transition: all 0.20s ease-in;
 }

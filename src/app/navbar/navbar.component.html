@@ -1,19 +1,46 @@
 <header appScrollHide class="fixed top-0 flex flex-col justify-center h-24 text-dDark backdrop-blur-sm">
-    <div class="navbar flex flex-row justify-between w-screen px-12">
+    <div class="navbar lg:flex flex-row justify-between w-screen px-12 hidden">
         <div class="text-2xl p-0 font-mono tracking-[0.2em] cursor-pointer">
             <span class="uppercase">Dan.sch</span>
         </div>
         <div>
             <ul class="menu menu-horizontal p-0 text-sm font-mono">
-                <li><a>About</a></li>
-                <li><a>Experience</a></li>
-                <li><a>Work</a></li>
-                <li><a>Contact</a></li>
+                <li><a class="!px-1">About</a></li>
+                <li><a class="!px-1">Experience</a></li>
+                <li><a class="!px-1">Work</a></li>
+                <li><a class="!px-1">Contact</a></li>
             </ul>
             <div class="pl-4">
                 <button class="styled-button text-sm font-mono">
                     <a>Resume</a>
                 </button>
+            </div>
+        </div>
+    </div>
+    <div class="lg:hidden">
+        <aside [ngClass]="status ? 'open-sidenav' : ''" style="width: min(75vw, 400px); transform: translateX(75vw);" class="absolute top-0 right-0 bottom-0 h-[100vh] bg-dBackgroundDark flex">
+            <ul>
+                <li>
+                    xxx
+                </li>
+                <li>
+                    yyy
+                </li>
+                <li>
+                    zzz
+                </li>
+            </ul>
+        </aside>
+        <div class="navbar xs:flex flex-row justify-between w-screen px-12">
+            <div class="text-2xl p-0 font-mono tracking-[0.2em] cursor-pointer">
+                <span class="uppercase">Dan.sch</span>
+            </div>
+            <div>
+                <button [ngClass]="status ? 'is-active' : ''" (click)="triggerNav()" class="hamburger hamburger--spin !leading-[0px]" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>  
             </div>
         </div>
     </div>

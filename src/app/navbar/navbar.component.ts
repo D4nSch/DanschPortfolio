@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Event } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  status = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  triggerNav() {
+    this.status = !this.status;
+  }
 }
