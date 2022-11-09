@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Event } from '@angular/router';
+import { CssHandlerService } from '../services/css-handler.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,12 +10,17 @@ export class NavbarComponent implements OnInit {
 
   status = false;
 
-  constructor() { }
+  constructor(private cssHandlerService: CssHandlerService) { }
 
   ngOnInit(): void {
   }
 
   triggerNav() {
     this.status = !this.status;
+    if(this.status) {
+      this.cssHandlerService.addCssClass("stop-scroll");
+    } else {
+      this.cssHandlerService.removeCssClass("stop-scroll");
+    }
   }
 }
