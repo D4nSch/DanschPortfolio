@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { CssHandlerService } from '../services/css-handler.service';
 const Typewriter = require('t-writer.js');
 
 @Component({
@@ -12,7 +13,7 @@ export class HeroSectionComponent implements OnInit {
 
   faCaretDown = faCaretDown;
 
-  constructor() { }
+  constructor(public cssHandlerService: CssHandlerService) { }
 
   ngOnInit(): void {
     const writer = new Typewriter(this.typewriterElement?.nativeElement, {

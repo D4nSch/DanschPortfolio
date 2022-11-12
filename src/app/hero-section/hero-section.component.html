@@ -16,6 +16,6 @@
         </p>
     </div>
     <div class="flex flex-row justify-center mt-20">
-        <fa-icon class="caret text-dAccentOrange cursor-pointer" [icon]="faCaretDown" size="5x"></fa-icon>
+        <fa-icon (click)="cssHandlerService.scrollToID('about')" class="caret text-dAccentOrange cursor-pointer" [icon]="faCaretDown" size="5x"></fa-icon>
     </div>
 </section>
