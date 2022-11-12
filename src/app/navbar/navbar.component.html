@@ -5,10 +5,10 @@
         </div>
         <div>
             <ul class="menu menu-horizontal p-0 text-sm font-mono">
-                <li><a class="!px-1">About</a></li>
-                <li><a class="!px-1">Experience</a></li>
-                <li><a class="!px-1">Work</a></li>
-                <li><a class="!px-1">Contact</a></li>
+                <li><a class="!px-1" (click)="cssHandlerService.scrollToID('about')">About</a></li>
+                <li><a class="!px-1" (click)="cssHandlerService.scrollToID('experience')">Experience</a></li>
+                <li><a class="!px-1" (click)="cssHandlerService.scrollToID('projects')">Work</a></li>
+                <li><a class="!px-1" (click)="cssHandlerService.scrollToID('contact')">Contact</a></li>
             </ul>
             <div class="pl-4">
                 <button class="styled-button text-sm font-mono">
@@ -18,15 +18,15 @@
         </div>
     </div>
     <div class="lg:hidden">
-        <div [ngClass]="status ? 'show-background-blur' : 'hide-background-blur'" class="absolute top-0 right-0 backdrop-blur-md bg-transparent w-[100vw] h-[100vh]">
+        <div [ngClass]="status ? '' : 'hide-background-blur'" class="absolute top-0 right-0 backdrop-blur-md bg-transparent w-[100vw] h-[100vh]">
         </div>
         <aside [ngClass]="status ? 'open-sidenav' : ''" style="width: min(75vw, 400px); transform: translateX(75vw);" class="absolute top-0 right-0 bottom-0 h-[100vh] bg-dBackgroundDark flex flex-row justify-center">
             <div class="flex flex-col justify-center">
                 <ul class="menu menu-vertical p-0 text-sm font-mono">
-                    <li><a class="!px-1 text-xl">About</a></li>
-                    <li><a class="!px-1 text-xl">Experience</a></li>
-                    <li><a class="!px-1 text-xl">Work</a></li>
-                    <li><a class="!px-1 text-xl">Contact</a></li>
+                    <li><a class="!px-1 text-xl" (click)="scrollToFromAside('about')">About</a></li>
+                    <li><a class="!px-1 text-xl" (click)="scrollToFromAside('experience')">Experience</a></li>
+                    <li><a class="!px-1 text-xl" (click)="scrollToFromAside('projects')">Work</a></li>
+                    <li><a class="!px-1 text-xl" (click)="scrollToFromAside('contact')">Contact</a></li>
                 </ul>
             </div>
         </aside>

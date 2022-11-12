@@ -10,7 +10,7 @@ export class NavbarComponent implements OnInit {
 
   status = false;
 
-  constructor(private cssHandlerService: CssHandlerService) { }
+  constructor(public cssHandlerService: CssHandlerService) { }
 
   ngOnInit(): void {
   }
@@ -22,5 +22,11 @@ export class NavbarComponent implements OnInit {
     } else {
       this.cssHandlerService.removeCssClass("stop-scroll");
     }
+  }
+
+  scrollToFromAside(id: string) {
+    this.status = !this.status;
+    this.cssHandlerService.scrollToID(id);
+    this.cssHandlerService.removeCssClass("stop-scroll");
   }
 }
