@@ -4,12 +4,6 @@
 
 @import '~hamburgers/_sass/hamburgers/hamburgers.scss';
 
-* {
-    transition: all 0.20s ease-in;
-}
-
-// $global-transition: all 0.25s 
-
 @font-face {
     font-family: "Calibre";
     src: url("./assets/fonts/Calibre-Regular.woff2") format("woff2"),
@@ -44,6 +38,14 @@
     url("./assets/fonts/SFMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+}
+
+* {
+    transition: all 0.20s ease-in;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

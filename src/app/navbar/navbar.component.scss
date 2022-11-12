@@ -17,21 +17,15 @@ ul li a::after {
 .nav-show-scroll {
   height: 4.5rem;
   box-shadow: 0 8px 12px -10px theme('colors.dDark');
-  // opacity: 100%;
   visibility: visible;
 }
 
 .nav-hide {
-  // opacity: 0%;
   visibility: hidden;
 }
 
 .open-sidenav {
   transform: translateX(0vw) !important;
-}
-
-.show-background-blur {
-  visibility: visible !important;
 }
 
 .hide-background-blur {
