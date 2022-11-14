@@ -2,8 +2,8 @@
     <p class="numbered-heading font-sans font-semibold !text-dDark">
         Where I’ve Worked
     </p>
-    <div class="mt-6 flex">
-        <div class="relative !min-w-max">
+    <div class="mt-6 flex md:flex-row flex-col">
+        <div class="relative !min-w-max mb-6">
             <ul class="menu font-mono text-sm">
                 <li class="hover:bg-dBackgroundDark highlighter" [class.active]="workToShow==='self'"><a (click)="setWorkToShow('self')">Self-Employment</a></li>
                 <li class="hover:bg-dBackgroundDark highlighter" [class.active]="workToShow==='redox'"><a (click)="setWorkToShow('redox')">Redox Interactive</a></li>
