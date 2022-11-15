@@ -15,3 +15,25 @@
         transform: scale(1.02);
     }
 }
+
+.build-image-container-right {
+    grid-column: 4/-1; 
+    grid-row: 1/2;
+}
+
+.text-container-right {
+    grid-column: 5/-1; 
+    grid-row: 1/2; 
+    align-self: center;
+}
+
+.build-image-container-left {
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+.text-container-left {
+    grid-column: 1/5;
+    grid-row: 1/2; 
+    align-self: center;
+}
