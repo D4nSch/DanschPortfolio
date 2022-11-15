@@ -1,4 +1,4 @@
-<header appScrollHide class="fixed top-0 flex flex-col justify-center h-24 text-dDark backdrop-blur-sm">
+<header appScrollHide class="fixed top-0 flex flex-col justify-center h-24 text-dDark backdrop-blur-sm z-50">
     <div class="navbar lg:flex flex-row justify-between w-screen px-12 hidden">
         <div class="text-2xl p-0 font-mono tracking-[0.2em] cursor-pointer">
             <span class="uppercase">Dan.sch</span>
@@ -28,6 +28,11 @@
                     <li><a class="!px-1 text-xl" (click)="scrollToFromAside('projects')">Work</a></li>
                     <li><a class="!px-1 text-xl" (click)="scrollToFromAside('contact')">Contact</a></li>
                 </ul>
+                <div class="mt-12 w-full flex flex-row justify-center">
+                    <button class="styled-button text-sm font-mono">
+                        <a>Resume</a>
+                    </button>
+                </div>
             </div>
         </aside>
         <div class="navbar xs:flex flex-row justify-between w-screen px-12">
