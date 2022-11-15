@@ -1,5 +1,11 @@
 ul li {
   counter-increment: navCounter;
+
+  a {
+    &:hover {
+      color: theme('colors.dAccentPurple');
+    }
+  }
 }
 
 ul li a::before {

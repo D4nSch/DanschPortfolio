@@ -54,7 +54,7 @@ body {
     color: theme('colors.dDark');
     counter-reset: counter;
 }
-  
+
 .numbered-heading {
     font-size: clamp(26px, 5vw, 32px);
     line-height: 1;
@@ -79,6 +79,11 @@ body {
     padding: 0.75rem 1rem;
     border: 1px solid;
     border-radius: 4px;
+    color: theme('colors.dAccentPurple');
+
+    &:hover {
+      transform: scale(1.02);
+    }
 }
 
 .stop-scroll {
