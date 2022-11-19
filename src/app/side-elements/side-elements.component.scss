@@ -1,0 +1,12 @@
+.vertical-text {
+    writing-mode: vertical-rl
+}
+
+.side-links::after {
+    display: block;
+    width: 3px;
+    height: 90px;
+    content: "";
+    margin: 0px auto;
+    background-color: theme('colors.dAccentPurple');;
+}
