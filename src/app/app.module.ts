@@ -13,6 +13,7 @@ import { TouchSectionComponent } from './touch-section/touch-section.component';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { ScrollHideDirective } from './navbar/scroll-hide.directive';
 import { FooterComponent } from './footer/footer.component';
+import { SideElementsComponent } from './side-elements/side-elements.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     TouchSectionComponent,
     ProjectModalComponent,
     ScrollHideDirective,
-    FooterComponent
+    FooterComponent,
+    SideElementsComponent
   ],
   imports: [
     BrowserModule,
