@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faComputer } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -7,8 +6,6 @@ import { faComputer } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  faComputer = faComputer;
 
   constructor() { }
 
