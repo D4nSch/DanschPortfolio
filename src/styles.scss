@@ -89,3 +89,26 @@ body {
 .stop-scroll {
     overflow: hidden;
 }
+
+
+.fancy-link {
+    display:inline-block; 
+    color: theme('colors.dAccentPurple');
+
+    &::after {
+        display:block;
+        content: '';
+        position: relative;
+        bottom: 0.37em;
+        border-bottom: solid 2px theme('colors.dAccentPurple');  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+        transform-origin: 0% 50%;
+    }
+
+    &:hover {
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+}
